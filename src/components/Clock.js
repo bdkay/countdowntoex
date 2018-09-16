@@ -20,12 +20,8 @@ class Clock extends Component {
     setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
   }
   
-  leadingZero(num){
-    if (num < 10){
-      return `0${num}`
-    } else {
-      return num;
-    }
+  leadingZero(num) {
+    return num < 10 ? `0${num}` : num;
   }
   
   getTimeUntil(deadline){
