@@ -9,11 +9,13 @@ class App extends Component {
       newDeadline: ''
     }
   }
+  
   changeDeadline(){
     this.setState({
       deadline: this.state.newDeadline
     });
   }
+  
   render(){
     return (
     <div className='App'>
